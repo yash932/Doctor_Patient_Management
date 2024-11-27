@@ -1,0 +1,100 @@
+/* Container */
+.status-container {
+    padding: 1.5rem;
+    background: #0f0c29;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Title */
+.status-container h2 {
+    font-size: 24px;
+    color: #6b63ff;
+    margin-bottom: 1rem;
+    text-shadow: 0px 0px 8px #6b63ff;
+    text-align: center;
+}
+
+/* List Items */
+.status-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 400px; /* Set a max-width for better fitting */
+}
+
+.status-container li {
+    background: linear-gradient(145deg, #1f1c47, #2e2a63);
+    border: 2px solid #4f4c82;
+    border-radius: 15px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 15px rgba(72, 58, 112, 0.8);
+}
+
+/* Item Titles */
+.status-container li h3 {
+    font-size: 18px;
+    margin-bottom: 0.5rem;
+    color: #a07aff;
+}
+
+/* Text */
+.status-container li p {
+    margin: 0.5rem 0;
+}
+
+/* Form Styles */
+.status-container form {
+    width: 100%;
+    max-width: 300px; /* Reduced width for better fit */
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Input Fields */
+.status-container form input {
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: 1px solid #4f4c82;
+    background: #1f1c47;
+    color: #ffffff;
+    font-size: 14px;
+    box-shadow: inset 0 0 5px rgba(72, 58, 112, 0.8);
+}
+
+/* Button */
+.status-container form button {
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: none;
+    background: #6b63ff;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    text-shadow: 0px 0px 5px #ffffff;
+    transition: background 0.3s ease;
+}
+
+.status-container form button:hover {
+    background: #5146ff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .status-container {
+        padding: 1rem;
+    }
+
+    .status-container form {
+        max-width: 90%; /* Adjust for smaller screens */
+    }
+}

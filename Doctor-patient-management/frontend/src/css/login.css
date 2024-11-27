@@ -1,0 +1,102 @@
+/* Page Background */
+body {
+    margin: 0;
+    font-family: "Orbitron", sans-serif;
+    background: radial-gradient(circle, #0f0c29, #302b63, #24243e);
+    color: #ffffff;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container styling */
+.login-container {
+    background: linear-gradient(145deg, #1f1c47, #2e2a63);
+    border: 2px solid #f51505;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(248, 31, 2, 0.8);
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    animation: glow 3s infinite alternate;
+}
+
+/* Glow animation */
+@keyframes glow {
+    from {
+        box-shadow: 0 0 15px #f71000;
+    }
+    to {
+        box-shadow: 0 0 30px #fd0000;
+    }
+}
+
+/* Title */
+.login-container h2 {
+    font-size: 24px;
+    color: #6b63ff;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    text-shadow: 0px 0px 8px #6b63ff;
+}
+
+/* Form Fields */
+.login-container input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 2px solid #4f4c82;
+    border-radius: 8px;
+    background: #1f1c47;
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.login-container input:focus {
+    border-color: #6b63ff;
+    box-shadow: 0 0 8px #6b63ff;
+}
+
+/* Submit Button */
+.login-container button {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background: linear-gradient(90deg, #6b63ff, #a07aff);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.login-container button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(90deg, #a07aff, #6b63ff);
+    box-shadow: 0px 0px 10px #6b63ff;
+}
+
+/* Error Message */
+.login-container .error {
+    color: #ff6b6b;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 14px;
+}
+
+/* Links */
+.login-container a {
+    color: #a07aff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.login-container a:hover {
+    color: #6b63ff;
+    text-shadow: 0px 0px 5px #6b63ff;
+}

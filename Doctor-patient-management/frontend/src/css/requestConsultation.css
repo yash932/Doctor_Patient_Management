@@ -1,0 +1,95 @@
+/* Modal Overlay */
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(20, 20, 50, 0.9);
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+}
+
+/* Modal Container */
+form {
+    background: linear-gradient(145deg, #2a2a5e, #3c3c78);
+    border: 2px solid #4f4c82;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(100, 80, 200, 0.8);
+    padding: 2rem;
+    max-width: 400px;
+    width: 90%;
+    font-family: "Orbitron", sans-serif;
+}
+
+/* Form Heading */
+form h2 {
+    color: #e1e1ff;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 0 10px #6b63ff, 0 0 20px #3a3691;
+}
+
+/* Input Fields */
+form input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    background: #1f1c47;
+    color: #d4d4f0;
+    border: 2px solid #4f4c82;
+    border-radius: 8px;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+form input:focus {
+    box-shadow: 0 0 8px #6b63ff, 0 0 15px #3a3691;
+    border-color: #6b63ff;
+}
+
+/* Buttons */
+form button {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    background: linear-gradient(90deg, #6b63ff, #3a3691);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+form button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(90deg, #3a3691, #6b63ff);
+    box-shadow: 0 0 15px #6b63ff;
+}
+
+/* Cancel Button */
+form button:nth-child(3) {
+    background: linear-gradient(90deg, #ff6b6b, #ff3a3a);
+}
+
+form button:nth-child(3):hover {
+    background: linear-gradient(90deg, #ff3a3a, #ff6b6b);
+    box-shadow: 0 0 15px #ff6b6b;
+}
+
+/* Image Preview */
+form img {
+    margin-top: 1rem;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #4f4c82;
+    box-shadow: 0 0 10px rgba(100, 80, 200, 0.5);
+}

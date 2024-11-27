@@ -1,0 +1,56 @@
+/* Navbar Container */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: linear-gradient(145deg, #1f1c47, #2e2a63);
+    border-bottom: 2px solid #4f4c82;
+    box-shadow: 0 0 20px rgba(72, 58, 112, 0.8);
+    font-family: "Orbitron", sans-serif;
+}
+
+/* Navbar Links */
+nav a {
+    color: #6b63ff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 1rem;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #a07aff;
+    text-shadow: 0 0 8px #6b63ff;
+}
+
+/* Logout Button */
+nav button {
+    padding: 0.5rem 1rem;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    background: linear-gradient(90deg, #ff6b6b, #ff8585);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+nav button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(90deg, #ff8585, #ff6b6b);
+    box-shadow: 0 0 10px #ff6b6b;
+}
+
+/* Responsive Spacing */
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.space-x-4 > * + * {
+    margin-left: 1rem;
+}
